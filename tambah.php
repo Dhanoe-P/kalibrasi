@@ -1,3 +1,5 @@
+<!-- Glory MU -->
+
 <?php
 include 'db_config.php';
 $errors = [];
