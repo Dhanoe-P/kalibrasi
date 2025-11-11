@@ -3,7 +3,7 @@ include 'db_config.php';
 $id = isset($_GET['id']) ? intval($_GET['id']) : 0;
 if ($id <= 0) { header('Location: index.php'); exit; }
 
-//menambahkan validasi dan sanitasi 
+//menambahkan validasi dan sanitasi input
 $errors = [];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $nama = mysqli_real_escape_string($conn, trim($_POST['nama_alat']));
